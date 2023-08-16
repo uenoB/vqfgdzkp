@@ -1,5 +1,5 @@
 export default {
-  release: { branches: ['latest'] },
+  branches: ['latest'],
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
