@@ -1,0 +1,27 @@
+{
+  "name": "@uenob/vqfgdzkp",
+  "version": "0.0.1",
+  "description": "dummy package for testing workflows",
+  "homepage": "https://github.com/uenoB/vqfgdzkp#readme",
+  "repository": "github:uenoB/vqfgdzkp",
+  "author": "Katsuhiro Ueno",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "exports": "./index.js",
+  "scripts": {
+    "build": "echo build ok",
+    "test": "prettier -c ."
+  },
+  "keywords": [
+    "test",
+    "dummy"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "prettier": "^3.0.2",
+    "semantic-release": "^21.0.7"
+  }
+}
