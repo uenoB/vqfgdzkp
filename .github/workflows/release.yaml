@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          ref: refs/heads/latest
+          ref: latest
       - uses: pnpm/action-setup@v2
         with:
           version: 8
@@ -31,6 +31,7 @@ jobs:
           cache-dependency-path: pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
+      - run: git branch
       - run: pnpm semantic-release --debug
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
