@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   branches: ['latest'],
   plugins: [
     '@semantic-release/commit-analyzer',
