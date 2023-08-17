@@ -6,7 +6,8 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        publishCmd: "(rm package.json && jq 'del(scripts)' > package.json) < package.json"
+        publishCmd:
+          "(rm package.json && jq 'del(scripts)' > package.json) < package.json"
       }
     ],
     '@semantic-release/npm',
