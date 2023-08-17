@@ -7,7 +7,8 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        prepareCmd: "sed -i~ 's/\\(VERSION *= *\\)'\\''.*'\\''/\\1'\\''${nextRelease.version}'\\''/' *.js"
+        prepareCmd:
+          "sed -i~ 's/\\(VERSION *= *\\)'\\''.*'\\''/\\1'\\''${nextRelease.version}'\\''/' *.js"
       }
     ],
     [
